@@ -1,34 +1,59 @@
 # 1. 编译产物（CMake 生成的目录和文件）
-build/          # CMake 构建目录（默认编译输出目录）
-cmake-build-*/  # CLion 等 IDE 自动生成的构建目录
-Makefile        # CMake 生成的 Makefile
-CMakeCache.txt  # CMake 缓存文件
-CMakeFiles/     # CMake 临时文件目录
-*.cmake         # CMake 生成的配置文件
-install_manifest.txt  # 安装清单文件
+# CMake 构建目录（默认编译输出目录）
+build/        
+# CLion 等 IDE 自动生成的构建目录  
+cmake-build-*/  
+# CMake 生成的 Makefile
+Makefile    
+# CMake 缓存文件    
+CMakeCache.txt  
+# CMake 临时文件目录
+CMakeFiles/
+# CMake 生成的配置文件    
+*.cmake
+# 安装清单文件         
+install_manifest.txt  
+build       
 
 # 2. 编译器产物
-*.o             # 目标文件
-*.a             # 静态库
-*.so            # Linux 动态库
-*.dll           # Windows 动态库
-*.dylib         # macOS 动态库
-*.exe           # Windows 可执行文件
-Observer           # Linux/macOS 可执行文件（对应之前的 add_executable 目标名）
+# 目标文件
+*.o
+# 静态库             
+*.a
+# Linux 动态库             
+*.so
+# Windows 动态库            
+*.dll
+# macOS 动态库           
+*.dylib
+# Windows 可执行文件         
+*.exe           
+
 
 # 3. 系统/IDE 配置文件
-.DS_Store       # macOS 系统文件
-.idea/          # CLion/IntelliJ IDEA 配置
-.vscode/        # VS Code 配置
-*.suo           # Visual Studio 配置
-*.sln           # Visual Studio 解决方案文件
-*.vcxproj       # Visual Studio 项目文件
+# macOS 系统文件
+.DS_Store
+# CLion/IntelliJ IDEA 配置       
+.idea/
+# VS Code 配置          
+.vscode/
+# Visual Studio 配置
+*.suo           
+# Visual Studio 解决方案文件        
+*.sln
+# Visual Studio 项目文件           
+*.vcxproj       
 
 # 4. 日志/临时文件
-*.log           # 日志文件
-temp/           # 临时目录
-*.tmp           # 临时文件
+# 日志文件
+*.log
+# 临时目录           
+temp/
+# 临时文件           
+*.tmp           
 
 # 5. 反向规则（不忽略指定文件）
-!main.cpp       # 即使前面有 *.cpp，也不忽略 main.cpp
-!src/utils.cpp  # 不忽略 src 目录下的 utils.cpp
+# 即使前面有 *.cpp，也不忽略 main.cpp
+!main.cpp
+# 不忽略 src 目录下的 utils.cpp       
+!src/utils.cpp  
