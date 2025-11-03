@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28.3)
-project(Observer)
+project(TemplateMethodPattern)
 set(CMAKE_CXX_STANDARD 20)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 file(GLOB_RECURSE SRC_FILES LIST_DIRECTORIES false ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
