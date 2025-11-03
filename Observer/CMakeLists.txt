@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 4.2.0)
+cmake_minimum_required(VERSION 3.28.3)
 project(Observer)
 set(CMAKE_CXX_STANDARD 20)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

@@ -13,7 +13,8 @@ CMakeFiles/
 *.cmake
 # 安装清单文件         
 install_manifest.txt  
-build       
+build
+bin    
 
 # 2. 编译器产物
 # 目标文件
